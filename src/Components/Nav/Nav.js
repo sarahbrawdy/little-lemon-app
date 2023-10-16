@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Images/Logo.svg";
+import hamburger from "../../Images/icon_hamburgermenu.svg"
 import "./Nav.css";
 
 function nav() {
@@ -26,6 +27,7 @@ function nav() {
             <a href="/">Login</a>
           </li>
         </ul>
+        <a className="hamburger" href={hamburger}></a>
       </nav>
     </div>
   );

@@ -3,14 +3,14 @@
   display: grid;
   height: 200px;
   grid-template-areas: "head head"
-  
+
                        "nav nav"
 
                        "main main"
 
                        "footer  footer";
 
-  grid-template-rows: 30px 60px 1fr 30px;
+  /*grid-template-rows: 30px 60px 1fr 30px;*/
   grid-template-columns: 150px 1fr;
 
 }
@@ -38,12 +38,7 @@ main {
  footer {
 
   grid-area: footer;
-  background-color: firebrick;
+  background-color: #495E57;
+  color: #EDEFEE;
 
-}
-
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-  }
 }

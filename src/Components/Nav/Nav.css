@@ -14,33 +14,49 @@
 
   }
 
-  .nav-bar-container > .nav-bar ul {
+.nav-bar-container > .nav-bar ul {
 
     display: flex;
     list-style: none;
     margin-right: 15px;
   }
 
-  .nav-bar-container > .nav-bar ul li{
+.nav-bar-container > .nav-bar ul li{
     justify-content: space-between;
     padding: 6px;
   }
-  
-  .nav-bar-container > .nav-bar ul li a{
+
+.nav-bar-container > .nav-bar ul li a{
     text-decoration: none;
     color: #495E57;
     font-weight: bold;
   }
-  
-  .nav-bar-container > .nav-bar ul li:hover {
+
+.nav-bar-container > .nav-bar ul li:hover {
     text-decoration: underline;
   }
-  
-  .nav-bar-container > .nav-bar a img {
+
+.nav-bar-container > .nav-bar a img {
     padding: 6px;
     margin-left: 15px;
   }
-  
-  .nav-bar-container > .nav-bar a img:hover {
+
+.nav-bar-container > .nav-bar a img:hover {
     width: 90%;
   }
+
+  .nav-bar-container > .nav-bar > .hamburger {
+    display: none;
+    visibility: hidden;
+  }
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-bar-container > .nav-bar > .hamburger {
+        visibility: visible;
+    }
+}
