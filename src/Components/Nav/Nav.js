@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../Images/Logo.svg";
-import hamburger from "../../Images/icon_hamburgermenu.svg"
 import "./Nav.css";
 
 function nav() {
   return (
+    <>
     <div className="nav-bar-container">
       <nav className="nav-bar">
         <a href="/">
@@ -27,9 +27,36 @@ function nav() {
             <a href="/">Login</a>
           </li>
         </ul>
-        <a className="hamburger" href={hamburger}></a>
       </nav>
     </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <nav id="menu">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">About</a>
+              </li>
+              <li>
+                <a href="/">Reservations</a>
+              </li>
+              <li>
+                <a href="/">Order Online</a>
+              </li>
+              <li>
+                <a href="/">Login</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </>
   );
 }
 
