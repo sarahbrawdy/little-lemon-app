@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Images/Logo.svg";
 import "./Nav.css";
+import Reservations from "../Reservations"
 
 function nav() {
   return (
@@ -18,7 +19,7 @@ function nav() {
             <a href="/">About</a>
           </li>
           <li>
-            <a href="/">Reservations</a>
+            <Link to='/Reservations'>Reservations</Link>
           </li>
           <li>
             <a href="/">Order Online</a>

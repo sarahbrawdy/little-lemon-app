@@ -134,7 +134,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1094px) {
   .specials-container {
     flex-direction: column;
   }
